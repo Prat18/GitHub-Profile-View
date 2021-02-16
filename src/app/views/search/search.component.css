@@ -1,0 +1,30 @@
+.main {
+  text-align: center
+}
+
+.img {
+  height: 70px;
+  width: 70px
+}
+
+.err p {
+  text-align: center;
+  color: black
+}
+
+.profile {
+  min-width: 350px;
+  max-width: 350px;
+  margin: 15px;
+}
+
+.message {
+  text-align: center
+}
+
+.message p {
+  text-align: center;
+  margin-top: 20%;
+  color: grey;
+  width: 100%
+}

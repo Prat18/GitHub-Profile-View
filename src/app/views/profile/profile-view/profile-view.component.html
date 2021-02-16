@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="main">
+    <div class="container">
+      <div class="col-md-12" style="padding: 30px">
+        <div style="height: 40px">
+          <h1
+            class="display-4"
+            style="cursor: pointer"
+            routerLink="/"
+            routerLinkActive="active"
+          >
+            <i class="fa fa-reply back">{{ constant.BACK }}</i>
+          </h1>
+        </div>
+        <div style="margin-top: 20px">
+          <div class="row">
+            <div>
+              <img
+                class="card-img-top rounded float-left img"
+                src="{{ dataService.activeProfiles.img }}"
+                alt="{{ dataService.activeProfiles.name }}"
+              />
+            </div>
+            <div class="name" style="margin: 30px">
+              <h3>{{ dataService.activeProfiles.name }}</h3>
+              <h5>
+                {{ "@" + dataService.activeProfiles.handle }}
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column col-md-12">
+        <div class="col-md-12 profile">
+          <h5>{{ constant.BIO }}</h5>
+          <p class="h6">
+            {{ dataService.activeProfiles.bio }}
+          </p>
+        </div>
+        <div class="row col-md-12">
+          <div class="col-md-6 profile">
+            <h5>{{ constant.REPOS }}</h5>
+            <p class="h6">
+              {{ dataService.activeProfiles.repos }}
+            </p>
+          </div>
+          <div class="col-md-6 profile">
+            <h5>{{ constant.FOLLOWERS }}</h5>
+            <p class="h6">
+              {{ dataService.activeProfiles.followers }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" style="padding: 30px">
+        <h5 style="text-align: left">{{ constant.PINNED_REPOS }}</h5>
+        <div class="column" *ngFor="let repo of pinnedRepos">
+          <app-pinned-repo [pinnedRepo]="repo"></app-pinned-repo>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <form [formGroup]="form" (submit)="onSearchHandle()">
+      <div class="row">
+        <input
+          class="form-control col-md-10"
+          type="text"
+          formControlName="handle"
+          placeholder="Enter name..."
+        />
+        <button class="btn btn-primary col-md-2" type="submit">
+          {{ constant.SEARCH_BTN }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

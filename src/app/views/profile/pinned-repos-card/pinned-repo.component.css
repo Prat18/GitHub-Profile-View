@@ -1,6 +1,7 @@
 .main {
   border: solid 2px black;
-  margin: 5px;
+  margin: 1px;
+  padding: 1rem;
   padding-left: 10px;
   padding-top: 8px;
 }
@@ -15,7 +16,7 @@
 .desc {
   text-align: left;
   line-height: 1.5em;
-  height: 4.5em;
+  height: 1.5em;
   overflow: hidden;
   color: grey;
 }

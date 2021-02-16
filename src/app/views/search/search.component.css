@@ -13,6 +13,7 @@
 }
 
 .profile {
+  border: solid 2px black;
   min-width: 350px;
   max-width: 350px;
   margin: 15px;

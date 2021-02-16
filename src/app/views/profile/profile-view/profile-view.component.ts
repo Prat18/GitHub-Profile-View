@@ -10,6 +10,7 @@ import { Constants } from '../../../constants/constants';
 })
 export class ProfileViewComponent implements OnInit {
   constant: any = Constants;
+  isLoading: Boolean = false;
   pinnedRepos: any;
 
   constructor(
@@ -22,7 +23,8 @@ export class ProfileViewComponent implements OnInit {
   }
 
   async getPinnedRepos(username: string) {
+    this.isLoading = true;
     this.pinnedRepos = await this.searchService.getUserPinnedRepos(username);
-    console.log(this.pinnedRepos);
+    this.isLoading = false;
   }
 }

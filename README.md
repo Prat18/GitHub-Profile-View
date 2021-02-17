@@ -15,20 +15,20 @@ Search page:
 - While the entire search page is rendereing, a loading animation is displayed.
 - After rendering the page it will look like this.  
 
-![](<https://github.com/Prat18/GitHub-Profile-Viewer/blob/main/Screenshot%20(18).png>)
+![](<https://github.com/Prat18/GitHub-Profile-View/blob/main/screen-shots/search.png>)
 
 Search results: (keyword: "this")  
 - After searching user with name "this", first 9 cards will be rendered.
 - Scrolling till the end of page will automatically render next 9 cards ont the page.
 - While rendering the next page a spinner animation is displayed.  
 
-![](<https://github.com/Prat18/GitHub-Profile-Viewer/blob/main/Screenshot%20(19).png>)
+![](<https://github.com/Prat18/GitHub-Profile-View/blob/main/screen-shots/search_result.png>)
 
 Profile view:  
 - After clicking on a profile, profile information will be displayed on page http://domain/profile
 - All the profile details are available as shown in the folloing image.  
 
-![](<https://github.com/Prat18/GitHub-Profile-Viewer/blob/main/Screenshot%20(20).png>)
+![](<https://github.com/Prat18/GitHub-Profile-View/blob/main/screen-shots/profile.png>)
 
 ## Error handling  
 - Profile page is guarded and user cannot access this page unless it has been triggerd from the search page (profile card).
@@ -44,7 +44,7 @@ For fetching pinned repositories I have used [this](https://dev.to/nsadisha/get-
 
 API returns status code 403 if it reaches it's limit. In that case proper error message has been displayed in the application.
 
-![](<https://github.com/Prat18/GitHub-Profile-Viewer/blob/main/Screenshot%20(17).png>)
+![](<https://github.com/Prat18/GitHub-Profile-View/blob/main/screen-shots/error.png>)
 
 ## Build
 
